@@ -51,6 +51,7 @@ const analizeBoard = (board, player, move) => {
 }
 
 const ticTacToe = (board = [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '], player = 'O') => {
+  printBoard(board);
   inquirer.prompt({
     type: 'list',
     name: 'move',
